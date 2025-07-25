@@ -448,6 +448,7 @@ fill: #F4F4FD;
 /* form */
 .form-footer {
     display: flex;
+    flex-direction: column;
     margin-left: 80px;
     
 }
@@ -469,16 +470,16 @@ fill: #F4F4FD;
 .form-footer-input {
     border: 1px solid #FFFFFF;
     background-color: transparent;
-        border-radius: 4px;
-        width: 264px;
-        height: 40px;
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-        padding-left: 16px;
-        transition-property: border-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        
-        
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    padding-left: 16px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    flex-grow: 1;
+    padding: 10px;
 }
 .form-footer-input:focus {
     border-color: #4D5AE5;
@@ -504,7 +505,6 @@ fill: #F4F4FD;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
     gap: 16px;
     border: 1px solid #4D5AE5;
     border-radius: 4px;
@@ -539,7 +539,7 @@ fill: #F4F4FD;
     align-items: center;
     background-color: rgba(46, 47, 66, 0.4) ;
     opacity: 0;
-    pointer-events: auto;
+    pointer-events: none;
 
 }
 .modal-overlay.is-open {
