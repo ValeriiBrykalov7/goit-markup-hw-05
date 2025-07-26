@@ -472,7 +472,7 @@
           </ul>
         </div>
         <div class="form-box">
-          <p for="email" class="form-footer-p">Subscripe</p>
+          <p class="form-footer-p">Subscripe</p>
           <form class="form-footer" name="form" autocomplete="off" novalidate>
             <label class="mini-box" for="email">
               <input
@@ -496,99 +496,89 @@
 
     <div class="modal-overlay">
       <div class="modal">
+        <button type="button" class="close-btn">
+          <svg class="overlay-close" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <p class="overlay-text">
+          Leave your contacts and we will call you back
+        </p>
         <form
           class="overlay-form"
           name="contact-form"
           autocomplete="off"
           novalidate
         >
-          <div class="btn-wrap">
-            <button type="button" class="close-btn">
-              <svg class="overlay-close" width="8" height="8">
-                <use href="./images/icons.svg#close"></use>
+          <div class="line-box">
+            <label class="overlay-label" for="user-name">Name</label>
+            <div class="input-wrap">
+              <input
+                class="overlay-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
               </svg>
-            </button>
+            </div>
           </div>
-          <p class="overlay-text">
-            Leave your contacts and we will call you back
-          </p>
-
-          <div class="lines">
-            <div class="line-box">
-              <label class="overlay-label" for="username">Name</label>
-              <div class="input-wrap">
-                <input
-                  class="overlay-input"
-                  type="text"
-                  name="username"
-                  id="username"
-                />
-                <svg class="form-icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="line-box">
-              <label for="mobile" class="overlay-label">Phone</label>
-              <div class="input-wrap">
-                <input
-                  class="overlay-input"
-                  type="tel"
-                  name="mobile"
-                  id="mobile"
-                />
-                <svg class="form-icon" width="18" height="24">
-                  <use href="./images/icons.svg#phone"></use>
-                </svg>
-              </div>
-            </div>
-
-            <div class="line-box">
-              <label class="overlay-label" for="mail">Email</label>
-              <div class="input-wrap">
-                <input
-                  class="overlay-input"
-                  type="email"
-                  name="mail"
-                  id="mail"
-                />
-                <svg class="form-icon" width="18" height="24">
-                  <use href="./images/icons.svg#email"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="line-box">
-              <div class="textarea-wrap">
-                <label class="overlay-label">Comment </label>
-                <textarea class="overlay-textarea" name="comm"></textarea>
-              </div>
-            </div>
-
-            <div class="checkbox-wrap">
-              <label class="overlay-label">
-                <input
-                  class="overlay-checkbox"
-                  type="checkbox"
-                  name="privacy"
-                  value="privacy policy"
-                />
-                <span class="agree-box"
-                  ><svg class="check-icon" width="10" height="8">
-                    <use href="./images/icons.svg#vector"></use>
-                  </svg>
-                </span>
-
-                I accept the terms and conditions of the&nbsp;
-                <span class="privacy-policy"
-                  ><a href="#">Privacy Policy</a></span
-                >
-              </label>
+          <div class="line-box">
+            <label for="mobile" class="overlay-label">Phone</label>
+            <div class="input-wrap">
+              <input
+                class="overlay-input"
+                type="tel"
+                name="mobile"
+                id="mobile"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
             </div>
           </div>
 
-          <div class="btn-box">
-            <button class="send-btn" type="submit">Send</button>
+          <div class="line-box">
+            <label class="overlay-label" for="mail">Email</label>
+            <div class="input-wrap">
+              <input class="overlay-input" type="email" name="mail" id="mail" />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
           </div>
+
+          <div class="textarea-wrap">
+            <label class="overlay-label" for="user-comment">Comment </label>
+            <textarea
+              class="overlay-textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="checkbox-wrap">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              id="user-privacy"
+            />
+            <label class="label-check" for="user-privacy">
+              <span class="agree-box"
+                ><svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#vector"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+
+              <a class="privacy-policy" href="#">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button class="send-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
