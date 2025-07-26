@@ -401,7 +401,6 @@ width: 100%;
 .end .logo {
     display: inline-block;
     margin-bottom: 16px;
-
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -420,6 +419,9 @@ width: 100%;
     max-width: 264px;
 }
 
+.icons-box {
+    margin-right: 80px;
+}
 .icons-box .social-text {
     width: 96px;
     font-weight: 500;
@@ -427,6 +429,7 @@ width: 100%;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+
 }
 .sm-icons {
     display: flex;
@@ -448,23 +451,22 @@ fill: #F4F4FD;
 /* form */
 .form-footer {
     display: flex;
-    flex-direction: column;
-    margin-left: 80px;
-    
+    gap: 24px;
 }
 
-.form-footer-label {
+.form-footer-p {
 
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    margin-bottom: 16px;
     
 }
 .mini-box {
     display: flex;
-    gap: 24px;
-    margin-top: 16px;
+    
+    
 }
 
 .form-footer-input {
@@ -478,8 +480,11 @@ fill: #F4F4FD;
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    flex-grow: 1;
     padding: 10px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
 }
 .form-footer-input:focus {
     border-color: #4D5AE5;
@@ -505,25 +510,33 @@ fill: #F4F4FD;
     display: flex;
     align-items: center;
     justify-content: center;
+    
     gap: 16px;
-    border: 1px solid #4D5AE5;
+    border: none;
     border-radius: 4px;
-        padding: 8px 24px;
-        width: 165px;
-        height: 40px;
-        background-color:#4D5AE5;
-        font-weight: 500;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    background-color:#4D5AE5;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
         text-align: center;
         color: #FFFFFF;
+        cursor: pointer;
         transition-property: background-color;
+        
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-footer:hover {
     background-color: #404BBF;
+}
+.send {
+    margin-left: 16px;
 }
 
 /* modal */
@@ -550,7 +563,7 @@ fill: #F4F4FD;
     background-color: #FCFCFC;
     border-radius: 4px;
     width: 408px;
-    height: 584px;
+    min-height: 584px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 
 position: relative;
@@ -581,8 +594,8 @@ position: relative;
     top: 24px;
     right: 24px;
     transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-wrap:hover .close-btn {
    background-color: #404BBF; 
